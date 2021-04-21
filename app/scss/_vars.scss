@@ -1,0 +1,27 @@
+%opensans-300 {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%raleway-500 {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%title {
+  font-size: 30px;
+  line-height: 39px;
+  @extend %raleway-500;
+}
+
+%subtitle {
+  font-size: 21px;
+  line-height: 27px;
+  @extend %raleway-500;
+}
+
+%text{
+  font-size: 16px;
+  line-height: 21px;
+  @extend %opensans-300;
+}
