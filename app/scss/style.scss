@@ -201,6 +201,69 @@
   }
 }
 
+.event{
+  background-color: #FFC41E;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top-title{
+    @extend %title;
+    color: #2E373B;
+    padding: 75px 0 55px;
+  }
+  &__top-link{
+    @extend %subtitle;
+    color: #2E373B;
+    margin: 84px 25px 58px 0;
+    border-bottom: 1px solid #2E373B;
+    transition: all .3s;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-black.svg');
+      width: 17px;
+      height: 8px;
+      top: 12px;
+      right: -30px;
+    }
+    &:hover{
+      color: #F6404F;
+      border-bottom: 1px solid #F6404F;
+    }
+  }
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &__box-item{
+    padding-bottom: 80px;
+    &:hover{
+      border: 1px solid #2E373B;
+    }
+  }
+  &__box-img{
+    object-fit: cover;
+    width: 350px;
+    height: 240px;
+  }
+  &__box-data{
+    color: #2E373B;
+    margin: 20px 0 10px;
+  }
+  &__box-title{
+    @extend %subtitle;
+    color: #F6404F;
+    margin-bottom: 10px;
+  }
+  &__box-subtitle{
+    @extend %text;
+    color: #2E373B;
+  }
+}
+
 
 
 @import 'media';
