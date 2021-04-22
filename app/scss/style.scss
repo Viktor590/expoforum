@@ -172,6 +172,35 @@
   }
 }
 
+.info{
+  background-color: #2378FC;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 0;
+  }
+  &__box-title{
+    @extend %title;
+    margin-right: 120px;
+    margin-bottom: 30px;
+  }
+  &__box-title:last-child{
+    margin-right: 0;
+  }
+  &__box-item{
+    margin-bottom: 15px;
+  }
+  &__box-link{
+    @extend %opensans-300;
+    color: #fff;
+    transition: all .3s;
+    &:hover{
+      color: #FFC41E;
+      border-bottom: 1px solid #FFC41E;
+    }
+  }
+}
+
 
 
 @import 'media';

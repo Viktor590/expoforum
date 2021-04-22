@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'OpenSansCondensed-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local(OpenSansCondensed-Light),
+    url('../fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+    url('../fonts/OpenSansCondensed-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local(Raleway-Medium),
+    url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Medium.woff') format('woff');
+  font-display: swap;
+}
