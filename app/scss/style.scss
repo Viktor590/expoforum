@@ -264,6 +264,75 @@
   }
 }
 
+.news{
+  &-box{
+    margin: 75px 125px 0 0;
+    float: left;
+  }
+  &-box__img{
+    width: 445px;
+    height: 215px;
+    object-fit: cover;
+    &:first-child{
+      margin-bottom: 59px;
+    }
+  }
+  &-item__box{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item__title{
+    @extend %title;
+    color: #2E373B;
+    margin: 75px 0 30px;
+  }
+  &-item__link{
+    @extend %subtitle;
+    color: #2E373B;
+    margin: 75px 0 30px;
+    position: relative;
+    &:hover{
+      color: #F6404F;
+      border-bottom: 1px solid #F6404F;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-black.svg');
+      width: 17px;
+      height: 8px;
+      top: 12px;
+      right: -30px;
+    }
+  }
+  &-about__box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &-about__img{
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  &-about__content{
+    max-width: 340px;
+  }
+  &-about__data{
+    @extend %text;
+    color: #F6404F;
+    margin: 15px 0;
+  }
+  &-about__link{
+    @extend %subtitle;
+    color: #2E373B;
+    &:hover {
+      color: #F6404F;
+    }
+  }
+}
+
 
 
 @import 'media';
