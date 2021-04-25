@@ -1,0 +1,117 @@
+@media (max-width: 1150px){
+  .header{
+    &__info-inner{
+      display: none;
+    }
+    &__nav-list{
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .header{
+    &__reg{
+      bottom: 3%;
+      right: 10%;
+    }
+  }
+}
+
+@media (max-width: 850px){
+  .header{
+    &__nav-link{
+      font-size: 12px;
+    }
+    &__logo-img{
+      display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 770px){
+  .header{
+    &__nav{
+      display: none;
+    }
+    &__nav.header__nav-active{
+      display: block;
+      position: absolute;
+      right: 225px;
+      top: 18px;
+      background-color: #333;
+      z-index: 1;
+    }
+    &__nav-list{
+      display: grid;
+    }
+    &__nav-item{
+      margin-right: 0;
+      padding: 25px 75px 15px 70px;
+    }
+    &__nav-link{
+      font-size: 20px;
+    }
+    &-burger{
+      display: block;
+    }
+    &__item-descr{
+      margin-top: 225px;
+    }
+    &__item-title{
+      margin-bottom: 0;
+      font-size: 50px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .header{
+    &__reg{
+      width: 410px;
+      grid-gap: 15px;
+    }
+    &__schedule,
+    &__map,
+    &__registration,
+    &__plan{
+      width: 200px;
+      height: 130px;
+    }
+    &__schedule-title{
+      padding: 14px 0 15px 7px;
+    }
+    &__schedule-link{
+      padding-left: 7px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .header{
+    &__reg{
+      position: revert;
+      grid-template-columns: repeat(1, 1fr);
+      width: 200px;
+    }
+    &__nav.header__nav-active{
+      right: 0;
+      top: 115px;
+    }
+    &__item-descr{
+      margin-top: 100px;
+      margin-right: 0;
+      width: 290px;
+    }
+    &__item-title{
+      font-size: 30px;
+      line-height: 70px;
+    }
+    &__item-text{
+      font-size: 12px;
+      line-height: 0;
+    }
+  }
+}
