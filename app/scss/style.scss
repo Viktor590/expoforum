@@ -16,7 +16,8 @@
     border-bottom: 1px solid #fff;
   }
   &__logo-img{
-    padding-top: 35px ;
+   padding-top: 35px;
+   z-index: 3;
   }
   &__nav{
     margin-top: -18px;
@@ -166,23 +167,35 @@
     background-color: #F6404F;
   }
   &-burger{
+    position: relative;
     width: 40px;
     height: 40px;
-    position: absolute;
-    right: 60px;
-    top: 27px;
-    border-bottom: 4px solid black;
-    border-top: 4px solid black;
     display: none;
+    z-index: 2;
   }
-  &-burger__link{
+  &-burger span{
     position: absolute;
-    top: 14px;
     width: 40px;
-    height: 4px;
-    background-color: black;
+    height: 2px;
+    background-color: #fff;
+    top: 18px;
+  }
+  &-burger::after,
+  &-burger::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+  }
+  &-burger::after{
+    top: 0;
+  }
+  &-burger::before{
+    bottom: 0;
   }
 }
+
 
 .info{
   background-color: #2378FC;
@@ -301,7 +314,7 @@
   &-item__link{
     @extend %subtitle;
     color: #2E373B;
-    margin: 75px 0 30px;
+    margin: 75px 20px 30px 0;
     position: relative;
     &:hover{
       color: #F6404F;
@@ -350,12 +363,11 @@
   &-top{
     display: flex;
     justify-content: space-between;
-    width: 1115px;
+    width: 100%;
     padding-bottom: 40px;
   }
   &-top__item{
     padding-top: 60px;
-    margin-right: 60px;
     width: 270px;
   }
   &-top__title{
@@ -390,6 +402,7 @@
   }
   &-bottom{
     display: flex;
+    justify-content: space-between;
     padding-bottom: 35px;
   }
   &-top__item-subscription{
